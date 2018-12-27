@@ -41,7 +41,7 @@ class MqttClient:
         if (self.mqttConn == None):
             self.Open()
         else:
-            ID = 'Domoticz_'+str(int(time.time()))
+            ID = 'Domoticz_H801_'+str(int(time.time()))
             Domoticz.Log("MQTT CONNECT ID: '" + ID + "'")
             self.mqttConn.Send({'Verb': 'CONNECT', 'ID': ID})
 
