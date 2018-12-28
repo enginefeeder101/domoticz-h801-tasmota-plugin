@@ -8,7 +8,9 @@
     </description>
     <params>
         <param field="Address" label="MQTT Server address" width="300px" required="true" default="127.0.0.1"/>
-        <param field="Port" label="Port" width="300px" required="true" default="1883"/>
+        <param field="Port" label="MQTT Server port" width="300px" required="true" default="1883"/>
+        <param field="Username" label="MQTT Username" width="300px" required="false" default=""/>
+        <param field="Password" label="MQTT Password" width="300px" required="false" default="" password="true"/>
 
         <param field="Mode1" label="Device Topic" width="300px" default="sonoff"/>
         <param field="Mode2" label="Device Type" width="300px">
